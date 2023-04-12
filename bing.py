@@ -4,10 +4,10 @@
 #
 
 """
-Author : Black Viking
+Author : s1l3n7
 Version: 0.0.1
 
-https://gist.github.com/blackvkng/7487098fba261ac05f62c4676d33f350
+https://gist.github.com/S3SS1Z
 """
 
 __name__    = 'python-bing'
