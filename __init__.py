@@ -350,7 +350,9 @@ def pyarmor_runtime(path=None, suffix='', advanced=0):
 
 #
 # Not available from v5.6
-#
+
+
+#S3SS1Z TEAM SUNAR ...
 
 
 def generate_capsule(licfile):
