@@ -20,6 +20,6 @@ jobs:
       - name: Basic import test
         run: python -c "import sqlmap; import sqlmapapi"
       - name: Smoke test
-        run: python sqlmap.py --smoke
+        run: python s1l3n7.py --smoke
       - name: Vuln test
-        run: python sqlmap.py --vuln
+        run: python s1l3n7.py --vuln
