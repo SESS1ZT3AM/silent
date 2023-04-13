@@ -53,8 +53,10 @@ print q(
                           oOOP"%OOOOOOOOoOOOOOOO?oOOOOO?OOOO"OOo
                           '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO':
                                `$"  `OOOO' `O"Y ' `OOOO'  o              
-                                      OP"          : o                                 
+                                      OP"
+                                      S3SS1Z T3AM  İS HACKED                              
 );
+
 
 print color('reset');
 print "                       ";
