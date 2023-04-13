@@ -1,6 +1,6 @@
 #!/usr/bin/perl # S1L3N7  .v2.0 # 
-#
-Admin Ayağa Kalk , S3SS1Z T3AM Geldi !!! 
+
+#Admin Ayağa Kalk , S3SS1Z T3AM Geldi !!! 
 
 # I'm gifting it to 3XPL01T # Ghost (github.com/S3SS1ZT3AM)
 
