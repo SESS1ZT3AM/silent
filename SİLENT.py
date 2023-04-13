@@ -5,6 +5,35 @@ Admin Ayağa Kalk , S3SS1Z T3AM Geldi !!!
 # I'm gifting it to 3XPL01T # Ghost (github.com/S3SS1ZT3AM)
 
  
+ 
+ 
+                                                                   HACKED BY
+                                               ¸,ø¤º°`°º¤ø,¸¸,ø¤º°S3SS1Z T3AM °º¤ø,¸¸,ø¤º°`°º¤ø,¸
+                                               
+                                               
+                                               
+             .o oOOOOOOOo                                            OOOo
+             Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
+             OboO"""""""""""".OOo. .oOOOOOo.    OOOo.oOOOOOo.."""""""""'OO
+             OOP.oOOOOOOOOOOO "POOOOOOOOOOOo.   `"OOOOOOOOOP,OOOOOOOOOOOB'
+             `O'OOOO'     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO'    `OOOOo
+             .OOOO'            `OOOOOOOOOOOOOOOOOOOOOOOOOO'            `OO
+             OOOOO                 '"OOOOOOOOOOOOOOOO"`                oOO
+            oOOOOOba.                .adOOOOOOOOOOba               .adOOOOo.
+           oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO
+          OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  '"OOOOOOOOOOOOO.OOOOOOOOOOOOOO
+          "OOOO"       "YOoOOOOMOIONODOO"`  .   '"OOROAOPOEOOOoOY"     "OOO"
+             Y           'OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?'         :`
+             :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?          
+                          oOOP"%OOOOOOOOoOOOOOOO?oOOOOO?OOOO"OOo
+                          '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO':
+                               `$"  `OOOO' `O"Y ' `OOOO'  o              
+                                      OP"          : o                                                        
+                                                                                
+                                               
+                                               
+                                                                   HACKED BY
+                                               ¸,ø¤º°`°º¤ø,¸¸,ø¤º°S3SS1Z T3AM °º¤ø,¸¸,ø¤º°`°º¤ø,¸
 
 
 import base64, codecs
