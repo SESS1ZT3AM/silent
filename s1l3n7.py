@@ -17,7 +17,7 @@ try:
     try:
         __import__("lib.utils.versioncheck")  # this has to be the first non-standard import
     except ImportError:
-        sys.exit("[!] wrong installation detected (missing modules). Visit 'https://github.com/S3SS1ZT3AM/s1l3n7' for further details")
+        sys.exit("[!] wrong installation detected (missing modules). Visit 'https://github.com/sqlmapproject/sqlmap/#installation' for further details")
 
     import bdb
     import glob
@@ -120,29 +120,29 @@ def checkEnvironment():
         os.path.isdir(modulePath())
     except UnicodeEncodeError:
         errMsg = "your system does not properly handle non-ASCII paths. "
-        errMsg += "Please move the s1l3n7's directory to the other location"
+        errMsg += "Please move the sqlmap's directory to the other location"
         logger.critical(errMsg)
         raise SystemExit
 
     if LooseVersion(VERSION) < LooseVersion("1.0"):
         errMsg = "your runtime environment (e.g. PYTHONPATH) is "
         errMsg += "broken. Please make sure that you are not running "
-        errMsg += "newer versions of s1l3n7 with runtime scripts for older "
+        errMsg += "newer versions of sqlmap with runtime scripts for older "
         errMsg += "versions"
         logger.critical(errMsg)
         raise SystemExit
 
     # Patch for pip (import) environment
-    if "s1l3n7p.s1l3n7" in sys.modules:
+    if "sqlmap.sqlmap" in sys.modules:
         for _ in ("cmdLineOptions", "conf", "kb"):
             globals()[_] = getattr(sys.modules["lib.core.data"], _)
 
-        for _ in ("s1l3n7BaseException", "s1l3n7ShellQuitException", "s1l3n7SilentQuitException", "s1l3n7UserQuitException"):
+        for _ in ("SqlmapBaseException", "SqlmapShellQuitException", "SqlmapSilentQuitException", "SqlmapUserQuitException"):
             globals()[_] = getattr(sys.modules["lib.core.exception"], _)
 
 def main():
     """
-    Main function of s1l3n7 when running from command line.
+    Main function of sqlmap when running from command line.
     """
 
     try:
@@ -212,7 +212,7 @@ def main():
 
                                     crawl(target)
                                 except Exception as ex:
-                                    if target and not isinstance(ex, s1l3n7UserQuitException):
+                                    if target and not isinstance(ex, SqlmapUserQuitException):
                                         errMsg = "problem occurred while crawling '%s' ('%s')" % (target, getSafeExString(ex))
                                         logger.error(errMsg)
                                     else:
@@ -232,18 +232,18 @@ def main():
                         else:
                             raise
 
-    except s1l3n7UserQuitException:
+    except SqlmapUserQuitException:
         if not conf.batch:
             errMsg = "user quit"
             logger.error(errMsg)
 
-    except (s1l3n7SilentQuitException, bdb.BdbQuit):
+    except (SqlmapSilentQuitException, bdb.BdbQuit):
         pass
 
-    except s1l3n7ShellQuitException:
-        cmdLineOptions.s1l3n7Shell = False
+    except SqlmapShellQuitException:
+        cmdLineOptions.sqlmapShell = False
 
-    except s1l3n7BaseException as ex:
+    except SqlmapBaseException as ex:
         errMsg = getSafeExString(ex)
         logger.critical(errMsg)
 
@@ -381,7 +381,7 @@ def main():
             raise SystemExit
 
         elif "AttributeError: unable to access item" in excMsg and re.search(r"3\.11\.\d+a", sys.version):
-            errMsg = "there is a known issue when s1l3n7 is run with ALPHA versions of Python 3.11. "
+            errMsg = "there is a known issue when sqlmap is run with ALPHA versions of Python 3.11. "
             errMsg += "Please downgrade to some stable Python version"
             logger.critical(errMsg)
             raise SystemExit
@@ -423,7 +423,7 @@ def main():
 
         elif "'WebSocket' object has no attribute 'status'" in excMsg:
             errMsg = "wrong websocket library detected"
-            errMsg += " (Reference: 'https://github.com/s1l3n7project/s1l3n7/issues/4572#issuecomment-775041086')"
+            errMsg += " (Reference: 'https://github.com/sqlmapproject/sqlmap/issues/4572#issuecomment-775041086')"
             logger.critical(errMsg)
             raise SystemExit
 
@@ -434,7 +434,7 @@ def main():
             raise SystemExit
 
         elif any(_ in excMsg for _ in ("unable to access item 'liveTest'",)):
-            errMsg = "detected usage of files from different versions of s1l3n7"
+            errMsg = "detected usage of files from different versions of sqlmap"
             logger.critical(errMsg)
             raise SystemExit
 
@@ -487,7 +487,7 @@ def main():
             logger.critical(errMsg)
             raise SystemExit
 
-        elif all(_ in excMsg for _ in ("No such file", "s1l3n7.conf", "Test")):
+        elif all(_ in excMsg for _ in ("No such file", "sqlmap.conf", "Test")):
             errMsg = "you are trying to run (hidden) development tests inside the production environment"
             logger.critical(errMsg)
             raise SystemExit
@@ -551,7 +551,7 @@ def main():
         kb.threadContinue = False
 
         if (getDaysFromLastUpdate() or 0) > LAST_UPDATE_NAGGING_DAYS:
-            warnMsg = "your s1l3n7 version is outdated"
+            warnMsg = "your sqlmap version is outdated"
             logger.warning(warnMsg)
 
         if conf.get("showTime"):
@@ -581,7 +581,7 @@ def main():
             try:
                 with openFile(conf.harFile, "w+b") as f:
                     json.dump(conf.httpCollector.obtain(), fp=f, indent=4, separators=(',', ': '))
-            except s1l3n7BaseException as ex:
+            except SqlmapBaseException as ex:
                 errMsg = getSafeExString(ex)
                 logger.critical(errMsg)
 
@@ -596,7 +596,7 @@ def main():
         while threading.active_count() > 1 and (time.time() - _) > THREAD_FINALIZATION_TIMEOUT:
             time.sleep(0.01)
 
-        if cmdLineOptions.get("s1l3n7Shell"):
+        if cmdLineOptions.get("sqlmapShell"):
             cmdLineOptions.clear()
             conf.clear()
             kb.clear()
