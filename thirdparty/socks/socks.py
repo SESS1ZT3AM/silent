@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+S3SS1Z T3AM Project
+Admin Ayağa Kalk S3SS1Z T3AM Geldi !!!
 
 """SocksiPy - Python SOCKS module.
 Version 1.00
