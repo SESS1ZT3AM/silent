@@ -7,71 +7,71 @@ S3SS1Z T3AM project
 class SqlmapBaseException(Exception):
     pass
 
-class SqlmapCompressionException(s1l3n7BaseException):
+class SqlmapCompressionException(SqlmapBaseException):
     pass
 
-class SqlmapConnectionException(s1l3n7BaseException):
+class SqlmapConnectionException(SqlmapBaseException):
     pass
 
-class SqlmapDataException(s1l3n7BaseException):
+class SqlmapDataException(SqlmapBaseException):
     pass
 
-class SqlmapFilePathException(s1l3n7BaseException):
+class SqlmapFilePathException(SqlmapBaseException):
     pass
 
-class SqlmapGenericException(s1l3n7BaseException):
+class SqlmapGenericException(SqlmapBaseException):
     pass
 
-class SqlmapInstallationException(s1l3n7BaseException):
+class SqlmapInstallationException(SqlmapBaseException):
     pass
 
-class SqlmapMissingDependence(s1l3n7BaseException):
+class SqlmapMissingDependence(SqlmapBaseException):
     pass
 
-class SqlmapMissingMandatoryOptionException(s1l3n7BaseException):
+class SqlmapMissingMandatoryOptionException(SqlmapBaseException):
     pass
 
-class SqlmapMissingPrivileges(s1l3n7BaseException):
+class SqlmapMissingPrivileges(SqlmapBaseException):
     pass
 
-class SqlmapNoneDataException(s1l3n7BaseException):
+class SqlmapNoneDataException(SqlmapBaseException):
     pass
 
-class SqlmapNotVulnerableException(s1l3n7BaseException):
+class SqlmapNotVulnerableException(SqlmapBaseException):
     pass
 
-class SqlmapSilentQuitException(s1l3n7BaseException):
+class SqlmapSilentQuitException(SqlmapBaseException):
     pass
 
-class SqlmapUserQuitException(s1l3n7BaseException):
+class SqlmapUserQuitException(SqlmapBaseException):
     pass
 
-class SqlmapShellQuitException(s1l3n7BaseException):
+class SqlmapShellQuitException(SqlmapBaseException):
     pass
 
-class SqlmapSkipTargetException(s1l3n7BaseException):
+class SqlmapSkipTargetException(SqlmapBaseException):
     pass
 
-class SqlmapSyntaxException(s1l3n7BaseException):
+class SqlmapSyntaxException(SqlmapBaseException):
     pass
 
-class SqlmapSystemException(s1l3n7BaseException):
+class SqlmapSystemException(SqlmapBaseException):
     pass
 
-class SqlmapThreadException(s1l3n7BaseException):
+class SqlmapThreadException(SqlmapBaseException):
     pass
 
-class SqlmapTokenException(s1l3n7BaseException):
+class SqlmapTokenException(SqlmapBaseException):
     pass
 
-class SqlmapUndefinedMethod(s1l3n7BaseException):
+class SqlmapUndefinedMethod(SqlmapBaseException):
     pass
 
-class SqlmapUnsupportedDBMSException(s1l3n7BaseException):
+class SqlmapUnsupportedDBMSException(SqlmapBaseException):
     pass
 
-class SqlmapUnsupportedFeatureException(s1l3n7BaseException):
+class SqlmapUnsupportedFeatureException(SqlmapBaseException):
     pass
 
-class SqlmapValueException(s1l3n7BaseException):
+class SqlmapValueException(SqlmapBaseException):
     pass
