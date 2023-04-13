@@ -6,8 +6,6 @@
 # I'm gifting it to 3XPL01T
 # Ghost (github.com/S3SS1ZT3AM)
 
-#don't Change my Rights
-
 #paste here
 use Getopt::Long;
 use HTTP::Request;
