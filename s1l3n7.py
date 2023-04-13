@@ -75,10 +75,10 @@ try:
     from lib.core.data import kb
     from lib.core.datatype import OrderedSet
     from lib.core.enums import MKSTEMP_PREFIX
-    from lib.core.exception import sqlmapBaseException
-    from lib.core.exception import sqlmapShellQuitException
-    from lib.core.exception import sqlmapSilentQuitException
-    from lib.core.exception import sqlmapUserQuitException
+    from lib.core.exception import SqlmapBaseException
+    from lib.core.exception import SqlmapShellQuitException
+    from lib.core.exception import SqlmapSilentQuitException
+    from lib.core.exception import SqlmapUserQuitException
     from lib.core.option import init
     from lib.core.option import initOptions
     from lib.core.patch import dirtyPatches
