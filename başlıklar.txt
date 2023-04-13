@@ -1,0 +1,6 @@
+Kabul et: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Kabul Dili: en-us,en;q=0.5
+Kabul-Kodlama: gzip,deflate
+Kabul Karakter Kümesi: ISO-8859-1,utf-8;q=0.7,*;q=0.7
+Hayatta Kalma: 115
+Bağlantı: canlı tutma
