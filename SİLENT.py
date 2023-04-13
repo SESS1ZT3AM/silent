@@ -1,6 +1,3 @@
-#!/usr/bin/perl 
-
-
 # S1L3N7  .v2.0 # 
 
 #Admin Ayağa Kalk , S3SS1Z T3AM Geldi !!! 
