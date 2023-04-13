@@ -44,7 +44,7 @@ from xml.sax import SAXParseException
 
 from extra.beep.beep import beep
 from extra.cloak.cloak import decloak
-from lib.core.bigarray import BigArray
+from lib.core.bigarray import bigarray
 from lib.core.compat import cmp
 from lib.core.compat import LooseVersion
 from lib.core.compat import round
