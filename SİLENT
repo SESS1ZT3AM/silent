@@ -8,7 +8,6 @@
 
 #paste here
 use Getopt::Long;
-use HTTP::Request;
 use LWP::UserAgent;
 use IO::Select;
 use HTTP::Cookies;
