@@ -1,3 +1,4 @@
+'''GERİ BASSSSS'''
 # Python code obfuscated by www.development-tools.net 
 
 # S1L3N7  .v2.0 # 
