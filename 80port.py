@@ -1,5 +1,4 @@
 import asyncio
-import ovh
 import socket
 import socks
 import threading
