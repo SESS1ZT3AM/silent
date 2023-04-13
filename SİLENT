@@ -7,7 +7,9 @@
 # Ghost (github.com/S3SS1ZT3AM)
 
 #paste here
+
 use Getopt::Long;
+use HTTP::Request;
 use LWP::UserAgent;
 use IO::Select;
 use HTTP::Cookies;
